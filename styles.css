@@ -9,77 +9,102 @@
     body {
       line-height: 1.6;
     }
-
+  .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
     /* Hero Section */
-    .hero-section {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-        url('https://iitb-wustl.org/images/banner-2.jpg') no-repeat center center/cover;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-    }
+    .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
 
     /* Navigation */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+  
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #5a67d8;
+        }
+ .logo::before {
+            content: "🎓";
+            margin-right: 0.5rem;
+            font-size: 2rem;
+        }
 
-    .nav-links {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+        .search-container {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 2rem;
+            position: relative;
+        }
 
-    .nav-btn, .counsel-btn {
-      background: none;
-      color: white;
-      border: 1px solid white;
-      padding: 8px 14px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.95rem;
-      transition: all 0.3s ease;
-    }
+       
 
-    .counsel-btn {
-      background-color: white;
-      color: black;
-    }
+     .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 3rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 25px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+        }
 
-    .nav-btn:hover, .counsel-btn:hover {
-      transform: translateY(-2px);
-    }
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #a0aec0;
+        }
 
-    /* Search Container */
-    .search-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-    }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
 
-    .top-search {
-      width: min(60%, 600px);
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: none;
-      outline: none;
-    }
+        .nav-link {
+            color: #4a5568;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: #5a67d8;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .counselling-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .counselling-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
 
     h1 {
       font-size: clamp(2rem, 4vw, 2.5rem);

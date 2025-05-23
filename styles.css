@@ -31,9 +31,10 @@
     
         .logo {
             display: flex;
-            align-items: center;
+            align-items: start;
             font-size: 1.5rem;
             font-weight: bold;
+            justify-content: space-between;
             color: #5a67d8;
         }
  .logo::before {
